@@ -6,23 +6,8 @@ function handleView(currentView,isStacked) {
         //Handle Header View
         case "DepictionHeaderView":
             view.innerText = currentView.title
-            if (currentView.hasOwnProperty("useBoldText")) {
-                if (currentView.useBoldText == false) {
-                    view.style.fontWeight = "normal"
-                }
-            }
-            if (currentView.hasOwnProperty("useMargins")) {
-                if (currentView.useMargins == false) {
-                    view.style.marginTop = 0
-                    view.style.marginBottom = 0
-                }
-            }
-            if (currentView.hasOwnProperty("alignment")) {
-                if (currentView.alignment == 1) {
-                    view.style.textAlign = "center"
-                } else if (currentView.alignment == 2) {
-                    view.style.textAlign = "right"
-                }
+            if (currentView.useBoldText == false) {
+                view.style.fontWeight = "normal"
             }
             break;
         //Handle Subheader View
@@ -30,12 +15,6 @@ function handleView(currentView,isStacked) {
             view.innerText = currentView.title
             if (currentView.useBoldText) {
                 view.style.fontWeight = "bold"
-            }
-            if (currentView.hasOwnProperty("useMargins")) {
-                if (currentView.useMargins == false) {
-                    view.style.marginTop = 0
-                    view.style.marginBottom = 0
-                }
             }
             break;
         //Handle Label View
@@ -50,67 +29,32 @@ function handleView(currentView,isStacked) {
                 view.style.margin = marginString
             }*/
             if (currentView.hasOwnProperty("fontWeight")) {
-                let fontWeightList = [
-                    {"name":"black","weight":"1000"},
-                    {"name":"heavy","weight":"800"},
-                    {"name":"bold","weight":"bold"},
-                    {"name":"semibold","weight":"600"},
-                    {"name":"regular","weight":"regular"},
-                    {"name":"thin","weight":"200"},
-                    {"name":"ultralight","weight":"100"},
-                ]
-                for (i=0; i<fontWeightList.length; i++) {
-                    if (fontWeightList[i].name == currentView.fontWeight) {
-                        view.style.fontWeight = fontWeightList[i].weight
-                    }
+                if (currentView.fontWeight = "semibold") {
+                    view.style.fontWeight = 600
+                } else {
+                    view.style.fontWeight = currentView.fontWeight
                 }
-            }
-            if (currentView.hasOwnProperty("usePadding")) {
-                view.style.paddingTop = "12px"
-                view.style.paddingBottom = "12px"
             }
             if (currentView.hasOwnProperty("textColor")) {
                 view.style.color = currentView.textColor
             }
             if (currentView.hasOwnProperty("fontSize")) {
-                view.style.fontSize = currentView.fontSize + "pt"
+                view.style.fontSize = currentView.fontSize + "px"
             }
             view.innerText = currentView.text
             break;
         //Handle Markdown Text View
         case "DepictionMarkdownView":
-            // useSpacing property - enable/disable veritcal spacing
-            if (currentView.hasOwnProperty("useSpacing")) {
-                if (!currentView.useSpacing) {
-                    view.style.marginTop = 0
-                    view.style.marginBottom = 0
-                }
-            }
-            // Get Custom Stylesheet Info
+            var converter = new showdown.Converter()
+            view.innerHTML = converter.makeHtml(currentView.markdown)
+            //Custom Stylesheets
             var styleStartIndex = currentView.markdown.indexOf("<style>")
             var styleEndIndex = currentView.markdown.indexOf("</style>")
             if (styleStartIndex >= 0) {
                 var styleString = currentView.markdown.slice(styleStartIndex+7,styleEndIndex).replace(/.*\{|\}/g,"")
-            }
-            // Remove Custom Stylesheet from markdown property
-            var markdownInner = currentView.markdown.replace(/\<style\>.*\<\/style\>/g,"")
-            // Add Markdown View's Inner Text into View
-            var converter = new showdown.Converter()
-            view.innerHTML = converter.makeHtml(markdownInner)
-            // Apply Custom Stylesheet Info
-            if (styleStartIndex >= 0) {
-                applyStyleToChildren(view, styleString)
-            }
-            // Functin to apply a style to all children of element (for recursion)
-            function applyStyleToChildren(element, styleString) {
-                let children = element.children
-                // Iterate through all child elements in element
+                children = view.children
                 for (i=0; i<children.length; i++) {
                     children[i].setAttribute("style",styleString)
-                    // Recursivly call this function untill all children of children etc have been styled
-                    if (children[i].children.length > 0) {
-                        applyStyleToChildren(children[i], styleString)
-                    }
                 }
             }
             break;
@@ -120,7 +64,7 @@ function handleView(currentView,isStacked) {
             image.src = currentView.URL
             image.width = currentView.width
             image.height = currentView.height
-            image.style.borderRadius = currentView.cornerRadius + "px"
+            image.style.borderRadius = currentView.cornerRadius
             if (currentView.alignment == "1") {
                 view.style.textAlign = "center"
             } else if (currentView.alignment == "2") {
@@ -190,16 +134,10 @@ function handleView(currentView,isStacked) {
             var linkContents = document.createElement("div")
             linkContents.className = "depictionButton"
             linkContents.innerText = currentView.title
+            link.appendChild(linkContents)
             //Create the arrow
             var backwardsArrow = document.createElement("div")
             backwardsArrow.className = "backwardsArrow"
-            //Set Custom Tint Color
-            if (currentView.hasOwnProperty('tintColor')) {
-                linkContents.style.color = currentView.tintColor
-                backwardsArrow.style.backgroundColor = currentView.tintColor
-            }
-            //Append TableCell and Contents to View
-            link.appendChild(linkContents)
             link.appendChild(backwardsArrow)
             view.appendChild(link)
             break;

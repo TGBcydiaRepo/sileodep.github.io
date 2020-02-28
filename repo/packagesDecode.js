@@ -2,6 +2,7 @@
 function returnCategoryCount(packages) {
     // Define Variables
     let categories = []
+    let count = []
     let contains = false
     // Loop through all categories dump (duplicates in one giant array)
     for (i=0; i<packages.length; i++) {
@@ -10,31 +11,23 @@ function returnCategoryCount(packages) {
         // Loop through existing categories
         for (j=0; j<categories.length; j++) {
             // If already in existing category, increment the counter
-            if (categories[j].name == tempCategoryName) {
+            if (categories[j] == tempCategoryName) {
                 contains = true
-                categories[j].tweakCount += 1
+                count[j]++
             }
         }
         // If not in existing category, add it to it.
         if (!contains) {
-            var tempCategory = {}
-            tempCategory.name = tempCategoryName
-            tempCategory.tweakCount = 1
-            categories.push(tempCategory)
+            categories.push(tempCategoryName)
+            count.push(1)
         }
     }
-    // Sort categories alphabetically by name field
-    categories.sort(function(a, b) {
-        return a.name.localeCompare(b.name);
-    });
-    // Return categories into array of objects
-    return categories
+    // Return into 2 dimensional array
+    return [categories, count]
 }
 
 // Function to decode Packages File
 function decodePackagesFile(packagesFile) {
-    // Define packageObjects (new array for package objects to be placed)
-    var packageObjects = []
     // Clean empty lines out of packages File
     packagesFile = packagesFile.replace(/^\s*[\r\n]/gm,"")
     // Split PackagesFile into Packages
@@ -58,9 +51,9 @@ function decodePackagesFile(packagesFile) {
             let propertyName = properties[i].substring(0, properties[i].indexOf(":"))
             // Extract Property Value from after first colon
             let propertyValue = properties[i].substring(properties[i].indexOf(":") + 2, properties[i].length)
+            // Set the property within the object
             // Try catch incase repo maintainer accidently wrote a property twice
             try {
-                // Set the property within the object
                 Object.defineProperty(package, propertyName, {
                     value: propertyValue
                 })
@@ -68,9 +61,8 @@ function decodePackagesFile(packagesFile) {
                 console.log("Note to developer: Your packages file is messed up!")
             }
         }
-        // Add package object into array of packages
-        packageObjects.push(package)
+        // Convert the package from string into new object
+        packages[packageNum] = package
     }
-    // Return Packages
-    return packageObjects
+    return packages
 }

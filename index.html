@@ -5,8 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title id="websiteTitle">Depiction</title>
         <link id="websiteIcon" rel="icon">
-        <link rel="stylesheet" href="global.css">
-        <link rel="stylesheet" href="depiction.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
@@ -43,6 +42,26 @@
                         Dark Mode
                         <div class="toggleSwitch" id="enableDarkMode" onclick="toggleSetting(this)">
                             <div class="toggleSwitchKnob"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="settingsCapsText" style="margin-top: 45px">Developer</p>
+                <div class="settingsTableArray">
+                    <div class="settingsTableCell">
+                        Custom Config
+                        <div class="toggleSwitch" id="enableCustomConfig" onclick="toggleSetting(this)">
+                            <div class="toggleSwitchKnob"></div>
+                        </div>
+                    </div>
+                    <div class="settingsNotEditable" id="customConfigSettings">
+                        <div class="settingsTableCell">
+                            Config URL:
+                            <input type="text" id="customConfigUrl" class="settingsTextField" readonly/>
+                        </div>
+                        <div class="settingsButtonCell">
+                            <div class="settingsTableCell" id="reloadConfigButton">
+                                Reload Config
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,19 +117,14 @@
                 <div class="headerPillSelector">
                     <div class="pillSelectorLine"></div>
                 </div>
-                <div id="mainWrapper">
-                        <div id="reloadingRepoWrapper">
-                            <img src="https://pinpal.github.io/Sileo-Depiction-WebViews/assets/loading.gif">
-                            <div id="reloadingRepoText">Fetching Sileo Depiction</div>
-                        </div>
-                </div>
+                <div id="mainWrapper"></div>
             </div>
         </div>
-
-        <script src="global.js"></script>
-        <script src="packageIconHandler.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/showdown"></script>
-        <script src="viewHandler.js"></script>
-        <script src="depiction.js"></script> 
+        
     </body>
+    <script src="global.js"></script>
+    <script src="../packageIconHandler.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown"></script>
+    <script src="viewHandler.js"></script>
+    <script src="script.js"></script>
 </html>

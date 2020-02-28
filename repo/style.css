@@ -1,4 +1,45 @@
+html {
+    --text-color: #000000;
+    --navbar-bg-color: #FEFEFE;
+    --bg-color: #FFFFFF;
+    --bg-opacity-color: rgba(255,255,255,.9);
+    --tint-color: #2CB1BE;
+    --border-color: #d6d6d6;
+    --light-text-color: #8F8E94;
+    --medium-text-color: #958E80;
+    scroll-behavior: smooth;
+}
 
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.08);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.20);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.25);
+}
+
+* {
+    color: #000000; /*fallback for IE*/
+    color: var(--text-color);
+    text-align: left;
+    font-family: -apple-system-font,BlinkMacSystemFont,Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body {
+    background-color: #FFFFFF; /*fallback for IE*/
+    background-color: var(--bg-color);
+    margin: 0;
+    margin-bottom: 25px;
+}
 #everythingWrapper {
     position: absolute;
     left: 0;
@@ -23,8 +64,7 @@
     top: 0;
     left: 0;
     position: fixed;
-    min-width: 100vw;
-    max-width: 100vw;
+    min-width: 100%;
     min-height: 45px;
     line-height: 45px;
 }
@@ -56,14 +96,9 @@
     padding-top: 10px;
     padding-bottom: 10px;
     overflow-y: hidden;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    overflow-x: auto;
     white-space: nowrap;
     object-fit: contain;
-}
-#FeaturedBannersView::-webkit-scrollbar {
-    display: none;
 }
 
 .bannerImage {
@@ -228,62 +263,4 @@ a {
     -moz-transition: transform 0.3s ease, opacity 0.3s ease;
     -o-transition: transform 0.3s ease, opacity 0.3s ease;
     -ms-transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-/* Welcome Message */
-#welcomeWrapper {
-    z-index: 1000;
-    background-color: rgba(0,0,0,.65);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-#welcomeMessage {
-    box-shadow: 5px 5px 10px rgba(0,0,0,.15);
-    width: calc(95vw - 10px);
-    max-width: 400px;
-    position: absolute;
-    top: calc(50% - 44px);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
-    background-color: var(--navbar-bg-color);
-    padding: 20px;
-    box-sizing: border-box;
-}
-#welcomeMessage img {
-    display: block;
-    width: 25vw;
-    max-width: 100px;
-    height: 25vw;
-    max-height: 100px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#welcomeMessage * {
-    text-align: center;
-}
-#welcomeMessage button {
-    cursor: pointer;
-    width: 100%;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    padding: 14px;
-    font-weight: 600;
-    font-size: 11pt;
-    color: white;
-    background-color: #017AFF;
-}
-#welcomeMessage .codeBox {
-    width: calc(95vw - 30px);
-    margin-left: -10px;
-    max-width: 380px;
-    background-color: rgba(0,0,0,.15);
-    padding: 10px;
-    border-radius: 5px;
-    box-sizing: border-box;
 }

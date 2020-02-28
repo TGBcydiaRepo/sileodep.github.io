@@ -1,3 +1,45 @@
+html {
+    --text-color: #000000;
+    --navbar-bg-color: #FEFEFE;
+    --bg-color: #FFFFFF;
+    --bg-opacity-color: rgba(255,255,255,.9);
+    --tint-color: #2CB1BE;
+    --border-color: #c5c5c5;
+    --light-text-color: #8F8E94;
+    --medium-text-color: #958E80;
+    scroll-behavior: smooth;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.08);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.20);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.25);
+}
+
+* {
+    color: #000000; /*fallback for IE*/
+    color: var(--text-color);
+    text-align: left;
+    font-family: -apple-system-font,BlinkMacSystemFont,Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body {
+    background-color: #FFFFFF; /*fallback for IE*/
+    background-color: var(--bg-color);
+    margin: 0;
+    margin-bottom: 25px;
+}
 
 .contentWrapper {
     width: 100%;
@@ -133,7 +175,6 @@
 }
 
 #navbarTweakIcon {
-    border-radius: 7px;
     position: absolute;
     min-width: 30px;
     min-height: 30px;
@@ -147,6 +188,8 @@
 
 /*Top Header Section*/
 .headerSection {
+    color: color: #000000; /*fallback for IE*/
+    color: var(--text-color);
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -191,8 +234,6 @@
 
 /*Header Pill Selector (Details/Changelog)*/
 .headerPillSelector {
-    background-color: var(--bg-color);
-    visibility: hidden;
     position: relative;
     min-height: 30px;
     padding-top: 10px;
@@ -202,7 +243,6 @@
     border-bottom-color: var(--border-color);
 }
 .pillText {
-    white-space: nowrap;
     left: 50%;
     cursor: pointer;
     padding-bottom: 10px;
@@ -235,7 +275,6 @@
 
 /*Screenshots*/
 .DepictionScreenshotsView {
-    max-width: 100%;
     margin-bottom: 8px;
     margin-top: 8px;
     padding-top: 10px;
@@ -243,9 +282,7 @@
     padding-left: 10px;
     padding-right: 10px;
     overflow-y: hidden;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    overflow-x: auto;
     white-space: nowrap;
     object-fit: contain;
 }
@@ -273,12 +310,6 @@ a {
 /*Padded Views*/
 .DepictionSubheaderView, .DepictionHeaderView, .DepictionMarkdownView, .DepictionTableView {
     margin: 18px;
-    overflow: hidden;
-}
-
-.DepictionMarkdownView p {
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .DepictionLabelView {
@@ -357,17 +388,17 @@ a {
 /*Table Button Views*/
 .DepictionTableButtonView {
     position: relative;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     margin-left: auto;
     margin-right: auto;
     width: calc(100% - 36px);
 }
 .backwardsArrow {
-    transform: rotate(180deg) translateY(50%);
-    -ms-transform: rotate(180deg) translateY(50%);
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     position: absolute;
-    top: 50%;
+    top: 8px;
     right: 0;
     min-width: 16px;
     max-width: 16px;
@@ -544,6 +575,8 @@ a {
     border-bottom-style: solid;
 }
 .socialLink p {
+    color: #000000; /*fallback for IE*/
+    color: var(--text-color);
     margin: 0;
     position: absolute;
     top: 50%;
