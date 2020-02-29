@@ -1,0 +1,109 @@
+{
+    "minVersion": "0.1",
+    "headerImage": "",
+    "tintColor": "#2cb1be",
+    "tabs": [
+        {
+            "tabname": "Details",
+            "views": [
+                {
+                    "title": "Apple Watch Respring Logo",
+                    "useBoldText": true,
+                    "useBottomMargin": false,
+                    "class": "DepictionSubheaderView"
+                },
+                {
+                    "itemCornerRadius": 6,
+                    "itemSize": "{160, 275.41333333333336}",
+                    "screenshots": [
+                        {
+                            "accessibilityText": "Screenshot",
+                            "url": "http://images.toogoodbruh.com/AppleWatchRespring-.gif",
+                            "fullSizeURL": "http://images.toogoodbruh.com/AppleWatchRespring-.gif"
+                        },
+                        {
+                            "accessibilityText": "Screenshot",
+                            "url": "http://images.toogoodbruh.com/img1.png",
+                            "fullSizeURL": "http://images.toogoodbruh.com/img1.png"
+                        },
+                        {
+                            "accessibilityText": "Screenshot",
+                            "url": "http://images.toogoodbruh.com/img2.png",
+                            "fullSizeURL": "http://images.toogoodbruh.com/img2.png"
+                        },
+                        {
+                            "accessibilityText": "Screenshot",
+                            "url": "http://images.toogoodbruh.com/img3.png",
+                            "fullSizeURL": "http://images.toogoodbruh.com/img3.png"
+                        }
+                    ],
+                    "class": "DepictionScreenshotsView"
+                },
+                {
+                    "markdown": "An animated respring logo that looks like an Apple Watch update screen.",
+                    "useSpacing": true,
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "title": "Latest Version",
+                    "class": "DepictionHeaderView"
+                },
+                {
+                    "title": "Version",
+                    "text": "  \u00b7 Smooth animation",
+                    "class": "DepictionTableTextView"
+                },
+                {
+                    "title": "Released",
+                    "text": "2020/02/24",
+                    "class": "DepictionTableTextView"
+                },
+                {
+                    "title": "Price",
+                    "text": "0",
+                    "class": "DepictionTableTextView"
+                },
+                {
+                    "title": "Developer",
+                    "text": "Gabe Nydick",
+                    "class": "DepictionTableTextView"
+                },
+                {
+                    "title": "Contact Support",
+                    "action": "",
+                    "class": "DepictionTableButtonView"
+                },
+                {
+                    "spacing": 16,
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "spacing": 20,
+                    "class": "DepictionSpacerView"
+                }
+            ],
+            "class": "DepictionStackView"
+        },
+        {
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "title": "1.0.0",
+                    "useBoldText": true,
+                    "useBottomMargin": true,
+                    "class": "DepictionSubheaderView"
+                },
+                {
+                    "markdown": "",
+                    "useSpacing": false,
+                    "class": "DepictionMarkdownView"
+                }
+            ],
+            "class": "DepictionStackView"
+        }
+    ],
+    "class": "DepictionTabView"
+}
