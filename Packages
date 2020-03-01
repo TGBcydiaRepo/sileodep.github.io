@@ -5,9 +5,9 @@ Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
 Depends: firmware (>=10.0)
 Filename: ./debs/com.toogoodbruh.applepreorderanim_1.0.0_iphoneos-arm.deb
 Size: 10120564
-MD5sum: 0fc3913257574c61154647aa1ca6137a
-SHA1: 0375d6ac37efa17466c9aae27e60dd77a5282346
-SHA256: 3c1f44306e6c71df398801cab9be0e3d0f80c0f7579de01233ee8056b9b0428c
+MD5sum: 74dfbef22f196371b6f8c172a240e675
+SHA1: a9f226af632e5f722354aca7421c0cf57e7a7267
+SHA256: 3b7e40be3c0bacb66ab8d0e5d72620e30900ef68b1c900dc779c073b02578aed
 Section: TGB Respring Logos
 Homepage: https://repo.toogoodbruh.com
 Description: An animated respring logo that is the same as the apple on the waiting
@@ -28,9 +28,9 @@ Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
 Depends: firmware (>=10.0)
 Filename: ./debs/com.toogoodbruh.applewatchrespringlogo_1.0.0_iphoneos-arm.deb
 Size: 4736816
-MD5sum: 9657e1ec2776a003ba9558570b9de8da
-SHA1: 21f843ef538a1758c755dcba28aae056af294a1b
-SHA256: bf38040c6c843c465a4e4634f3969a6ff7cbacffe4717140e14aee4e7e421ed0
+MD5sum: f0fcfe07eb60ed7be6b12c18f8c1ea8b
+SHA1: 7e0f6e156c1b657560c4815f32b1c30ac6dabbfe
+SHA256: eb4cdb6ef86ee4f4b9313c4678c34545012e822fc1e67447604281bdabbc8c7d
 Section: TGB Respring Logos
 Homepage: https://repo.toogoodbruh.com
 Description: An animated respring logo that looks like an Apple Watch update screen.
@@ -49,9 +49,9 @@ Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
 Depends: firmware( >=10.0)
 Filename: ./debs/com.toogoodbruh.shapeyouricons_1.0.1_iphoneos-arm.deb
 Size: 65644
-MD5sum: 5ce34d7db4ec4fb0a401316ac255ed4c
-SHA1: 6969bcc34c4c82e499b622007742635bd6a8483a
-SHA256: b4d8a6d2f149fda1e104273a83822bf0d54e80243aae5a14a753a71cea0d9103
+MD5sum: 12445a28c3a70cf6127c8ba13b46814e
+SHA1: e21c862981a0b2221cb1acfb002b4063f77bc4f6
+SHA256: c97541ee491b7e25d274f480ea50e8390a48794f247708bd20113b02a2d1710f
 Section: TGB Themes
 Homepage: https://repo.toogoodbruh.com
 Description: Shape Your Icons with Anemone!
@@ -67,9 +67,9 @@ Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
 Depends: firmware(>=2.0)
 Filename: ./debs/com.toogoodbruh.toogoodbruhrepoicons_0.4.0_iphoneos-arm.deb
 Size: 31938
-MD5sum: a107d5a9ad856e00a89e784dce377b27
-SHA1: 93dbeabf9eef588240a2895df486461fbc0f67d4
-SHA256: 51814c8109d546b5bdf5663b4fa7b291f4b44ae1b8880eff272fbf91d8e43b8b
+MD5sum: 4fb1b5007126f7a08f25ec6e2a1e5aea
+SHA1: e1345b769b0fa3b6bb744d2d07beba78405ee10b
+SHA256: c7cbd7838289fce2268873af4907abb21273292e39b942a1190d5c02149229a2
 Section: TGB Themes
 Priority: required
 Homepage: https://repo.toogoodbruh.com
