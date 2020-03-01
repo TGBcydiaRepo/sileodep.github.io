@@ -1,0 +1,11 @@
+Package: com.toogoodbruh.CydiaLogoTheme
+Name: Cydia Icon Theme Beta
+Version: 1.0.0-c
+Architecture: iphoneos-arm
+Description: Just changes two icons, that's all. WinterBoard and IconBundles are required to run this theme.
+Depiction: https://repo.toogoodbruh.com/depictions/?p=com.toogoodbruh.cydialogotheme
+Homepage: https://repo.toogoodbruh.com
+Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
+Author: TooGoodBruh <martialartsapplemma@gmail.com>
+Section: Test
+Tag: purpose::extension, compatible_min::ios10, compatible_max::ios11.4

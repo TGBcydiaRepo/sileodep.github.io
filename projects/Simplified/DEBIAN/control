@@ -1,0 +1,16 @@
+Package: com.toogoodbruh.simplified
+Name: Simplified
+Version: 1.0.0-p2
+Priority: optional
+Size: 100000
+Architecture: iphoneos-arm
+Description: Simple look for iOS devices
+Date: day-of-week, dd month yyyy hh:mm:ss -zzzz
+Depiction: https://repo.toogoodbruh.com/depictions/?p=com.toogoodbruh.simplified
+Homepage: https://repo.toogoodbruh.com
+Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
+Author: TooGoodBruh <martialartsapplemma@gmail.com>
+Section: TGB Themes
+Depends: mobilesubstrate
+Image: file:///Library/Themes/Simplified.theme/icon.png
+Tag: purpose::extension, compatible_min::ios10, compatible_max::ios13.4
