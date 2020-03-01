@@ -1,8 +1,10 @@
-Origin: Nepeta's Repo
-Label: Nepeta's Repo
+Origin: TooGoodBruh
+Label: TooGoodBruh
 Suite: stable
-Version: 1.0
+Version: 1.0.1
 Codename: ios
 Architectures: iphoneos-arm
 Components: main
-Description: Nepeta's Repo
+Description: Basic themes, mainly focused on animated respring logos
+Homepage: <http://repo.toogoodbruh.com>
+Twitter: <https://twitter.com/GabeNydick>
