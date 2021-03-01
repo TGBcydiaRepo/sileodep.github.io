@@ -1,0 +1,142 @@
+{
+    "minVersion": "1.0.11",
+    "class": "DepictionTabView",
+    "tintColor": "#2cb1be",
+    "headerImage": "https://images.toogoodbruh.com/Apple2020_September_Animation.gif",
+    "tabs": [
+        {
+            "tabname": "Details",
+            "class": "DepictionStackView",
+            "tintColor": "#2cb1be",
+            "views": [
+              {
+                  "useBottomMargin": false,
+                  "useBoldText": true,
+                  "class": "DepictionSubheaderView",
+                  "title": "Apple Event Respring Logo"
+              },
+                {
+                    "class": "DepictionSubheaderView",
+                    "useBoldText": true,
+                    "useBottomMargin": false,
+                    "title": "Description"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "<p>An animated respring logo that looks like the September 2020 Apple event waiting screen.</p>",
+                    "useRawFormat": true
+                },
+                {
+                    "class": "DepictionSubheaderView",
+                    "useBoldText": true,
+                    "useBottomMargin": false,
+                    "title": ""
+                },
+                {
+                    "class": "DepictionScreenshotsView",
+                    "itemCornerRadius": 6,
+                    "itemSize": "{160, 284.44444444444}",
+                    "screenshots": [
+                      {
+                          "accessibilityText": "Screenshot",
+                          "url": "https://images.toogoodbruh.com/Apple2020_September_Animation.gif",
+                          "fullSizeURL": "https://images.toogoodbruh.com/Apple2020_September_Animation.gif"
+                      },
+                        {
+                            "accessibilityText": "Screenshot",
+                            "url": "https://images.toogoodbruh.com/lightspinny.00@3x.png",
+                            "fullSizeURL": "https://images.toogoodbruh.com/lightspinny.00@3x.png"
+                        },
+                        {
+                            "accessibilityText": "Screenshot",
+                            "url": "https://images.toogoodbruh.com/lightspinny.95@3x.png",
+                            "fullSizeURL": "https://images.toogoodbruh.com/lightspinny.95@3x.png"
+                        }
+                    ]
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionSubheaderView",
+                    "useBoldText": true,
+                    "useBottomMargin": false,
+                    "title": "Information"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Author",
+                    "text": "Gabe Nydick"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Version",
+                    "text": "1.0.3"
+                },
+                {
+                    "text": "03-1-2021",
+                    "class": "DepictionTableTextView",
+                    "title": "Initial Release"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Price",
+                    "text": "Free"
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 16
+                },
+                {
+                    "class": "DepictionStackView",
+                    "views": [
+                        {
+                            "class": "DepictionTableButtonView",
+                            "title": "Support",
+                            "action": "No options",
+                            "openExternal": false
+                        }
+                    ]
+                },
+                {
+                    "class": "DepictionSpacerView",
+                    "spacing": 16
+                }
+            ]
+        },
+        {
+            "tabname": "Changelog",
+            "class": "DepictionStackView",
+            "tintColor": "#2cb1be",
+            "views": [
+                {
+                    "class": "DepictionSubheaderView",
+                    "useBoldText": true,
+                    "useBottomMargin": false,
+                    "title": "1.0.8"
+                },
+                {
+                    "text": "03-1-2021",
+                    "class": "DepictionTableTextView",
+                    "title": "Released"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "<ul>\n<li>Initial Release",
+                    "useRawFormat": true
+                },
+                {
+                    "class": "DepictionSubheaderView",
+                    "useBoldText": true,
+                    "useBottomMargin": false,
+                    "title": "1.0.10"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "<ul>\n<li>fixing issues",
+                    "useRawFormat": true
+                }
+            ]
+        }
+    ]
+}

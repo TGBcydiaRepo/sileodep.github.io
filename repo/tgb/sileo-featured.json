@@ -10,6 +10,12 @@
         "hideShadow": false
       },
       {
+        "url": "https://images.toogoodbruh.com/lightspinny.00@3x.png",
+        "title": "Apple Event Respring Logo",
+        "package": "com.toogoodbruh.applesept2020eventrespringlogo",
+        "hideShadow": false
+      },
+      {
         "url": "https://images.toogoodbruh.com/apple.png",
         "title": "Animated Apple Preorder Logo",
         "package": "com.toogoodbruh.applepreorderanim",

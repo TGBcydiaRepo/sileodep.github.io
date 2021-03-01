@@ -5,9 +5,9 @@ Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
 Depends: firmware (>=10.0)
 Filename: ./debs/com.toogoodbruh.applepreorderanim_1.0.0_iphoneos-arm.deb
 Size: 10120564
-MD5sum: 74dfbef22f196371b6f8c172a240e675
-SHA1: a9f226af632e5f722354aca7421c0cf57e7a7267
-SHA256: 3b7e40be3c0bacb66ab8d0e5d72620e30900ef68b1c900dc779c073b02578aed
+MD5sum: e3ddbc302c1b364c67a3e9073150fdbf
+SHA1: a320749d4471f6590ca554d87909b1d49100280d
+SHA256: 52dfa8de92bc1c53f368b72ca61d4332cc3ba307fb57c5c20a6d3a69d26096d5
 Section: TGB Respring Logos
 Homepage: https://repo.toogoodbruh.com
 Description: An animated respring logo that is the same as the apple on the waiting
@@ -21,6 +21,27 @@ Icon: file://Users/gnydick/Documents/toogoodbruh.github.io/projects/ApplePreOrde
 Name: Apple Preorder Animation
 Sileodepiction: https://sil.toogoodbruh.com/?json=http://sil.toogoodbruh.com/projects/ApplePreOrderAnim/DEBIAN/SileoDepiction.json
 
+Package: com.toogoodbruh.applesept2020eventrespringlogo
+Version: 1.0.11
+Architecture: iphoneos-arm
+Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
+Depends: firmware (>=10.0)
+Filename: ./debs/com.toogoodbruh.applesept2020eventrespringlogo_1.0.11_iphoneos-arm.deb
+Size: 54784826
+MD5sum: 1a6477134d3e7857d764f9b6f685ad81
+SHA1: 43e4416e8e73e34bf138ced7e0a8bb6070b442fc
+SHA256: d51736e26cc116fa209f6622acfd8874f99dbd56d4b0638e5e9bfd49106672e3
+Section: TGB Respring Logos
+Homepage: https://repo.toogoodbruh.com
+Description: An animated respring logo that looks like the September 2020 Apple event waiting screen.
+  · Smooth animation
+  · Takes up less space than previous versions
+Tag: purpose::extension, compatible_min::ios10, compatible_max::ios14.5
+Author: Gabe Nydick <martialartsapplemma@gmail.com>
+Depiction: https://sil.toogoodbruh.com/?json=http://repo.toogoodbruh.com/projects/AppleEvent2020RespringLogo/DEBIAN/SileoDepiction.json&name=Apple%20Event%20Respring%20Logo&section=TGB%20Respring%Logos&dev=Gabe%20Nydick
+Name: Apple Event Respring Logo
+Sileodepiction: https://sil.toogoodbruh.com/?json=http://repo.toogoodbruh.com/projects/AppleEvent2020RespringLogo/DEBIAN/SileoDepiction.json
+
 Package: com.toogoodbruh.applewatchrespringlogo
 Version: 1.0.0
 Architecture: iphoneos-arm
@@ -28,9 +49,9 @@ Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
 Depends: firmware (>=10.0)
 Filename: ./debs/com.toogoodbruh.applewatchrespringlogo_1.0.0_iphoneos-arm.deb
 Size: 4736816
-MD5sum: f0fcfe07eb60ed7be6b12c18f8c1ea8b
-SHA1: 7e0f6e156c1b657560c4815f32b1c30ac6dabbfe
-SHA256: eb4cdb6ef86ee4f4b9313c4678c34545012e822fc1e67447604281bdabbc8c7d
+MD5sum: 8f64f8345ad5401ba2289dbb115f90ce
+SHA1: d00e7deab0a7c235bbbdbf5b37ac56a44ec34c1c
+SHA256: 41db6c8619008251210a1758818253f760f9d90fd543eb9fd8d6f9209432bbb3
 Section: TGB Respring Logos
 Homepage: https://repo.toogoodbruh.com
 Description: An animated respring logo that looks like an Apple Watch update screen.
@@ -49,9 +70,9 @@ Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
 Depends: firmware( >=10.0)
 Filename: ./debs/com.toogoodbruh.shapeyouricons_1.0.1_iphoneos-arm.deb
 Size: 65644
-MD5sum: 12445a28c3a70cf6127c8ba13b46814e
-SHA1: e21c862981a0b2221cb1acfb002b4063f77bc4f6
-SHA256: c97541ee491b7e25d274f480ea50e8390a48794f247708bd20113b02a2d1710f
+MD5sum: d416a3b5b7422b66a7c946bb0df7635f
+SHA1: 487ffa85a5193fd867ad7620ea5e7f2b5a7f35c2
+SHA256: 05307ceb605a41df4c2b41894875a87b1c460cde6b1e1c8d430e15d719d36408
 Section: TGB Themes
 Homepage: https://repo.toogoodbruh.com
 Description: Shape Your Icons with Anemone!
@@ -67,9 +88,9 @@ Maintainer: TooGoodBruh <martialartsapplemma@gmail.com>
 Depends: firmware(>=2.0)
 Filename: ./debs/com.toogoodbruh.toogoodbruhrepoicons_0.4.0_iphoneos-arm.deb
 Size: 31938
-MD5sum: 4fb1b5007126f7a08f25ec6e2a1e5aea
-SHA1: e1345b769b0fa3b6bb744d2d07beba78405ee10b
-SHA256: c7cbd7838289fce2268873af4907abb21273292e39b942a1190d5c02149229a2
+MD5sum: 86750f1651e18879536af9de23f513cd
+SHA1: 06b372fe5f94382231b0a636f6f2bb7e8f0e3d90
+SHA256: 93d7764625377da1070a8e8db381812c76f1faeacd0445e621e0ae361b213d7c
 Section: TGB Themes
 Priority: required
 Homepage: https://repo.toogoodbruh.com
