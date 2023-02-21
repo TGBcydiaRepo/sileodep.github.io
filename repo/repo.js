@@ -10,7 +10,7 @@ const reloadingRepoText = document.getElementById("reloadingRepoText")
 // Function to Fetch Content from Repo
 async function getRepo(repoURL) {
     // Fetch Repo Title from Repo Release File
-    var repoTitle = "Repo Title"
+    var repoTitle = "TGB Repository"
     try {
         repoTitle = (await corsBypass(repoURL + "Release")).match(/Origin:.*/)[0].replace(/Origin:\s/g,"")
     } catch (error) {}
